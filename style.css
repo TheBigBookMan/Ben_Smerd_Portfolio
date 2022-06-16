@@ -1,0 +1,155 @@
+:root {
+    /*ADD IN SOME NICE COLOURS TO USE MAYBE THE LIGHT BLUE AND YELLOW*/
+}
+
+* {
+    font-family: sans-serif;
+    /*ADD IN A NICE COOLFONT PLEASEEEEEE*/
+}
+
+/*HEADER ON THE SIDE OF THE PAGE*/
+/*NEED TO MAKE IT OVERFLOW NOT INFRONT OF OTHERS*/
+#home {
+    display: block;
+    position: fixed;
+    overflow-y: auto;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 300px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+/*HEADER- NAVIGATION*/
+/*ADD IN THE LOGOS NEXT TO THE LIST */
+.navigation {
+    
+}
+
+.navigation ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.navigation li, a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(237, 222, 222);
+    
+}
+
+
+/*MAIN SECTION*/
+#main {
+    display: block;
+    margin-left: 300px;
+    padding-left: 5px;
+}
+
+#home-page img {
+    /*INPUT A BACKGROUND IMAGE OF THAT COOL WATER AND GRASS ETC WITH A FADED LOOK*/
+    background-attachment: fixed;
+}
+
+/*ABOUT ME SECTION*/
+#about-me-page {
+    display: block;
+    background-color: rgb(244, 236, 236);
+}
+
+.about-me-title h2{
+    text-align: center;
+}
+
+/*ABOUT ME- HOBBIES*/
+.hobbies-outer-list {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+
+.hobbies-inner-list {
+    line-height: 30px;
+    margin-top: -15px;
+    padding-bottom: 5px;
+}
+
+/*RESUME SECTION*/
+.resume-title {
+    text-align: center;
+}
+
+/*RESUME_ EDUCATION*/
+.education-list .education-outer-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-inner-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*RESUME WORK EXPERIENCE*/
+.resume-work-experience {
+    background-color: rgb(244, 236, 236);
+}
+
+/*SECTION PORTFOLIO*/
+#portfolio-page {
+    background-color: rgb(244, 236, 236);
+}
+
+.portfolio-title {
+    text-align: center;
+}
+
+/*FOOTER CONTACT ME*/
+footer {
+    display: block;
+    margin-left: 300px;
+    padding-left: 5px;
+}
+
+#contact-me-page {
+    display: flex;
+    flex-direction: column;
+}
+ /*FIX THIS UP BADLY I THINK I DONT NEED THEM ALL IN FLEXBOX*/
+.contact-me-title {
+    text-align: center;
+}
+
+.contact-me-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-me-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-me-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
