@@ -8,15 +8,15 @@
         <title>Ben Smerd Portfolio</title>
     </head>
     <body><!--NICE BLUE AND YELLOW AND RED COLOURS THE SOFT COLOURS-->
-        <header id="home">
-            <div class="home-content">
+        <header id="header">
+            <div class="header-content">
                 <div class="introduction">
-                    <img src="#">
-                    <!--ADD IN NEW PHOTO OF ME HEADSHOT-->
+                    <img src="Images/Me.jpg" alt="Headshot Photo of Myself">
                     <h1>Ben Smerd</h1>
                 </div>
                 <nav class="navigation">
-                    <ul><!--ADD IN LITTLE LOGOS NEXT TO THE WORDS-->
+                    <ul><!--ADDING IN LITTLE LOGOS NEXT TO THE WORDS FOR BETTER APPEARANCE-->
+                        <!--HOME PAGE WILL HAVE A LARGE PHOTO WITH ANIMATIONS LATER ONE AFTER LEARNING MORE HOW TO THEM WITH JAVASCRIPT-->
                         <li><a href="#home-page">Home</a></li>
                         <li><a href="#about-me-page">About Me</a></li>
                         <li><a href="#resume-page">Resume</a></li>
@@ -26,9 +26,15 @@
                 </nav>
                 <div class="personal-links">
                     <ul>
-                        <li><!--PICTURE OF GITHUB LOGO--></li>
-                        <li><!--PICTURE OF LINKEDIN LOGO--></li>
-                        <li><!--PICTURE OF FACEBOOK LOGO--></li>
+                        <li id="github-logo">
+                            <a href="https://github.com/TheBigBookMan" target="_blank"><img src="/Images/Github Logo.png" alt="Github Logo"></a>
+                        </li>
+                        <li id="linkedin-logo">
+                            <a href="https://www.linkedin.com/in/bensmerd/" target="_blank"><img src="Images/Linkedin Logo.png" alt="Linkedin Logo"></a>
+                        </li>
+                        <li id="facebook-logo">
+                            <a href="https://www.facebook.com/ben.smerd/" target="_blank"><img src="/Images/Facebook Logo.png" alt="Facebook Logo"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +42,6 @@
         <main id="main">
             <!--HOME PAGE- PICTURE OF ME ON THE COMPUTER CODING OR SOMETHING-->
             <section id="home-page">
-                <img src="#">
             </section>
 
             <!--ABOUT ME- HAVE INFO ABOUT WHO I AM WITH GENERAL INTERESTS, BDAY, AGE, CITY. HAVE PIC OF ME PLAYING GUITAR OR SOMETHING ON THE RIGHT SIDE WITH THE TEXT ON TOP AND DOT POINTS OF THOSE INFO, SIMILAR TO THE TEMPLATE PORTFOLIO ADD IN THE HOBBIE DROPDOWN MENU THING-->
@@ -51,7 +56,6 @@
                     <h3>Hobbies</h3>
                     <ul class="hobbies-outer-list">
                         <li>
-                            <img src="#">
                             <h4>Fitness</h4>
                             <ul class="hobbies-inner-list">
                                 <li>Gym</li>
@@ -60,7 +64,6 @@
                             </ul>
                         </li>
                         <li>
-                            <img src="#">
                             <h4>Creativity</h4>
                             <ul class="hobbies-inner-list">
                                 <li>Reading</li>
@@ -70,7 +73,6 @@
                             </ul>
                         </li>
                         <li>
-                            <img src="#">
                             <h4>Leisure</h4>
                             <ul class="hobbies-inner-list">
                                 <li>Hiking</li>
@@ -79,7 +81,6 @@
                             </ul>
                         </li>
                         <li>
-                            <img src="#">
                             <h4>Academics</h4>
                             <ul class="hobbies-inner-list">
                                 <li>Criminology</li>
@@ -163,7 +164,6 @@
                     <!--ADD IN A PHOTO OF ME ON THE COMPUTER TO THE SIDE OF IT ON THE RIGHT MAYBE-->
                     <h3>Skills</h3>
                     <img src="#">
-                    <!--USE SKILLS FROM RESUME PLUS OTHER STUFF LIKE GOOGLING AND BEING ABLE TO TYPE QICKLY ETC-->
                     <ul>
                         <li>
                             <p><span class="skills-important">Technological skills</span> while being efficient in Microsoft Programs (Word, PowerPoint etc), strong understanding of how to utilise Google search engine. Programming languages include: HTML, CSS, Javascript and Python, as well as efficiency in Git and GitHub use.</p>
@@ -183,14 +183,26 @@
              <!--PORTFOLIO- INLINE WITH IMAGES FOR WHAT THEY ARE WITH A SUBHEADING ABOUT SERVICES LIKE GOOD UI AND BRINGING CRITICAL THINKING ETC-->
             <section id="portfolio-page">
                 <h2 class="portfolio-title">Portfolio</h2>
-                
+                <h3>Applications and Web Pages</h3>
                 <div class="portfolio-container">
-                    <h3>Applications and Web Pages</h3>
-                        <img src="#">
-                        
-                        <img src="#">
-
-                        <img src="#">
+                    <figure class="portfolio-1">
+                        <a href="#" title="Application 1"><img src="/Images/Assignment 1.jpg" alt="Man Playing Guitar"></a>
+                        <figcaption><span>Application 1:</span> No project to link in yet.</figcaption>
+                    </figure>
+                    <div class="sub-portfolio">
+                        <figure class="portfolio-2">
+                            <a href="#" title="Application 2"><img src="Images/Assignment 2.jpg" alt="Cafe Open"></a>
+                            <figcaption><span>Application 2:</span> No project to link in yet.</figcaption>
+                        </figure>
+                        <figure class="portfolio-3">
+                            <a href="#" title="Application 3"><img src="/Images/Assignment 3.jpg" alt="Computer Aesthetics"></a>
+                            <figcaption><span>Application 3:</span> No project to link in yet.</figcaption>
+                        </figure>
+                        <figure class="portfolio-4">
+                            <a href="#" title="Application 4"><img src="/Images/Assignment 4.jpg" alt="Coding"></a>
+                            <figcaption><span>Application 4:</span> No project to link in yet.</figcaption>
+                        </figure>
+                    </div>
                 </div>
                 <div class="portfolio-services">
                     <h3>Services</h3>

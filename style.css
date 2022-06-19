@@ -1,33 +1,58 @@
 :root {
     /*ADD IN SOME NICE COLOURS TO USE MAYBE THE LIGHT BLUE AND YELLOW*/
+    --color1: rgb(244, 236, 236);
 }
 
 * {
     font-family: sans-serif;
+    box-sizing: border-box;
     /*ADD IN A NICE COOLFONT PLEASEEEEEE*/
 }
 
 /*HEADER ON THE SIDE OF THE PAGE*/
 /*NEED TO MAKE IT OVERFLOW NOT INFRONT OF OTHERS*/
-#home {
+#header {
     display: block;
     position: fixed;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     background-color: black;
     color: white;
-    height: 100%;
+    height: 110%;
     width: 300px;
 }
 
-.home-content {
+.header-content {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction img {
+    height: 150px;
+    width: 160px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    margin-bottom: 30px;
+    border: var(--color1) solid 10px;
+    border-radius: 50px;
+}
+
+.introduction h1 {
+    position: relative;
+    left: 40px;
+    color: var(--color1);
+}
+
 /*HEADER- NAVIGATION*/
 /*ADD IN THE LOGOS NEXT TO THE LIST */
 .navigation {
+    position: relative;
     
 }
 
@@ -40,55 +65,101 @@
 }
 
 .navigation li, a{
-    margin-bottom: 10px;
     text-decoration: none;
     list-style: none;
-    color: rgb(237, 222, 222);
-    
+    color: var(--color1);
+    margin-bottom: 20px;
 }
 
+.personal-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: -20px;
+}
+
+#github-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+#linkedin-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+#facebook-logo img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -5px;
+}
 
 /*MAIN SECTION*/
 #main {
     display: block;
     margin-left: 300px;
     padding-left: 5px;
+    margin-top: -20px;
 }
 
-#home-page img {
-    /*INPUT A BACKGROUND IMAGE OF THAT COOL WATER AND GRASS ETC WITH A FADED LOOK*/
+/*COMMENTED OUT BACKGROUND IMAGE WHILE I FIGURE OUT HOW TO DO IT*/
+/* #home-page {
+    background-image: url(../Images/Background-Photo-Nice.jpg);
     background-attachment: fixed;
-}
+    background-size: 300px 150px;
+} */
 
 /*ABOUT ME SECTION*/
 #about-me-page {
     display: block;
-    background-color: rgb(244, 236, 236);
+    background-color: var(--color1);
+    padding: 10px;
 }
 
 .about-me-title h2{
     text-align: center;
+    position: relative;
+    
+}
+
+.about-me p {
+    position: relative;
+    top: 10px;
 }
 
 /*ABOUT ME- HOBBIES*/
 .hobbies-outer-list {
+    position: relative;
+    top: -20px;
     display: flex;
     flex-direction: row; 
     justify-content: space-around;
     flex-wrap: wrap;
-    
-    
 }
 
 .hobbies-inner-list {
     line-height: 30px;
-    margin-top: -15px;
+    margin-top: -10px;
     padding-bottom: 5px;
 }
 
+.hobbies-outer-list li {
+    list-style: none;
+}
+
 /*RESUME SECTION*/
+#resume-page {
+    position: relative;
+    padding: 10px;
+}
+
 .resume-title {
     text-align: center;
+    position: relative;
+    top: -10px;
+    margin-bottom: -10px;
 }
 
 /*RESUME_ EDUCATION*/
@@ -107,16 +178,156 @@
 
 /*RESUME WORK EXPERIENCE*/
 .resume-work-experience {
-    background-color: rgb(244, 236, 236);
+    background-color: var(--color1);
+    margin-left: -10px;
+    padding: 10px;
+}
+
+/*RESUME SKILLS*/
+.resume-skills {
+    padding: 10px;
 }
 
 /*SECTION PORTFOLIO*/
 #portfolio-page {
-    background-color: rgb(244, 236, 236);
+    background-color: var(--color1);
+    padding: 10px;
 }
 
 .portfolio-title {
     text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -15px;
+}
+
+.portfolio-container span {
+    font-weight: bolder;
+}
+
+.portfolio-1 {
+    position: relative;
+}
+
+.portfolio-1 img{
+    width: 700px;
+    height: 600px;
+    border: gray 10px outset;
+    position: relative;
+    left: -20px;
+    background-color: black;
+    margin: 0;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.portfolio-1 img:hover {
+    opacity: 0.7;
+}
+
+.portfolio-1 figcaption {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    background-color: var(--color1);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.portfolio-2 {
+    position: relative;
+}
+
+.portfolio-2 img {
+    height: 175px;
+    width: 280px;
+    border: gray 10px outset;
+    background-color: black;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.portfolio-2 img:hover {
+    opacity: 0.7;
+}
+
+.portfolio-2 figcaption {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: var(--color1);
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.portfolio-3 {
+    position: relative;
+}
+
+.portfolio-3 img {
+    height: 175px;
+    width: 280px;
+    border: gray 10px outset;
+    background-color: black;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.portfolio-3 img:hover {
+    opacity: 0.7;
+}
+
+.portfolio-3 figcaption {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: var(--color1);
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.portfolio-4 {
+    position: relative;
+}
+
+.portfolio-4 img {
+    height: 175px;
+    width: 280px;
+    border: gray 10px outset;
+    background-color: black;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.portfolio-4 img:hover {
+    opacity: 0.7;
+}
+
+.portfolio-4 figcaption {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: var(--color1);
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.sub-portfolio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -30px;
 }
 
 /*FOOTER CONTACT ME*/
