@@ -10,7 +10,6 @@
 }
 
 /*HEADER ON THE SIDE OF THE PAGE*/
-/*NEED TO MAKE IT OVERFLOW NOT INFRONT OF OTHERS*/
 #header {
     display: block;
     position: fixed;
@@ -211,11 +210,13 @@
 
 .portfolio-1 {
     position: relative;
+    margin-left: 30px;
 }
 
 .portfolio-1 img{
     width: 700px;
     height: 600px;
+    flex-shrink: 2;
     border: gray 10px outset;
     position: relative;
     left: -20px;
@@ -231,12 +232,13 @@
 
 .portfolio-1 figcaption {
     position: absolute;
-    bottom: 50px;
+    bottom: 15px;
     right: 30px;
     background-color: var(--color1);
     color: black;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 0;
 }
 
 .portfolio-2 {
@@ -341,26 +343,91 @@ footer {
     display: flex;
     flex-direction: column;
 }
- /*FIX THIS UP BADLY I THINK I DONT NEED THEM ALL IN FLEXBOX*/
-.contact-me-title {
-    text-align: center;
+
+
+@media only screen and (max-width: 1200px) {
+    .portfolio-1 img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.contact-me-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/*MEDIA QUERY FOR TABLETS*/
+@media only screen and (max-width: 768px) {
+    .portfolio-1 img {
+        width: 280px;
+        height: 175px;
+    }
+
+    #header {
+        display: flex;
+        position: fixed;
+        background-color: black;
+        color: white;
+        height: 50px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .introduction img {
+        visibility: hidden;
+    }
+
+    .introduction h1 {
+        display: flex;
+        left: -150px;
+        /* top: 5px; */
+        padding-right: 150px;
+        font-size: large;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: -300px;
+        justify-content: space-between;
+    }
+    
+    .navigation li {
+        margin-right: 10px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .personal-links {
+        visibility: hidden;
+    }
+
+    #main {
+        position: relative;
+        top: 50px;
+        z-index: 1;
+    }
+
+    #main, footer {
+        margin: 0;
+    }
 }
 
-.contact-me-information {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+/*MEDIA QUERY FOR PHONES*/
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: small;
+    }
 
-.contact-me-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    .introduction h1 {
+        display: relative;
+        top: -10px;
+    }
 }
