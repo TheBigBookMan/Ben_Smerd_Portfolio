@@ -1,19 +1,16 @@
 :root {
-    /*ADD IN SOME NICE COLOURS TO USE MAYBE THE LIGHT BLUE AND YELLOW*/
     --color1: rgb(244, 236, 236);
 }
 
 * {
     font-family: sans-serif;
     box-sizing: border-box;
-    /*ADD IN A NICE COOLFONT PLEASEEEEEE*/
 }
 
 /*HEADER ON THE SIDE OF THE PAGE*/
 #header {
     display: block;
     position: fixed;
-    /* overflow-y: auto; */
     background-color: black;
     color: white;
     height: 110%;
@@ -26,6 +23,7 @@
     margin-left: 10px;
 }
 
+/*HEADER- INTRODUCTION*/
 .introduction {
     display: flex;
     flex-direction: column;
@@ -49,7 +47,6 @@
 }
 
 /*HEADER- NAVIGATION*/
-/*ADD IN THE LOGOS NEXT TO THE LIST */
 .navigation {
     position: relative;
     
@@ -60,7 +57,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .navigation li, a{
@@ -70,6 +66,7 @@
     margin-bottom: 20px;
 }
 
+/*HEADER- PERSONAL LINKS*/
 .personal-links ul {
     list-style: none;
     display: flex;
@@ -117,10 +114,10 @@
     padding: 10px;
 }
 
+/*ABOUT ME- TITLE*/
 .about-me-title h2{
     text-align: center;
     position: relative;
-    
 }
 
 .about-me p {
@@ -154,6 +151,7 @@
     padding: 10px;
 }
 
+/*RESUME- TITLE*/
 .resume-title {
     text-align: center;
     position: relative;
@@ -161,7 +159,7 @@
     margin-bottom: -10px;
 }
 
-/*RESUME_ EDUCATION*/
+/*RESUME- EDUCATION*/
 .education-list .education-outer-list{
     display: flex;
     flex-direction: row;
@@ -175,16 +173,20 @@
     flex-wrap: wrap;
 }
 
-/*RESUME WORK EXPERIENCE*/
+/*RESUME- WORK EXPERIENCE*/
 .resume-work-experience {
     background-color: var(--color1);
     margin-left: -10px;
     padding: 10px;
 }
 
-/*RESUME SKILLS*/
+/*RESUME- SKILLS*/
 .resume-skills {
     padding: 10px;
+}
+
+.skills-important {
+    font-weight: bold;
 }
 
 /*SECTION PORTFOLIO*/
@@ -193,10 +195,12 @@
     padding: 10px;
 }
 
+/*PORTFOLIO- TITLE*/
 .portfolio-title {
     text-align: center;
 }
 
+/*PORTFOLIO- APPLICATIONS*/
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -208,6 +212,7 @@
     font-weight: bolder;
 }
 
+/*PORTFOLIO- APPLICATION 1*/
 .portfolio-1 {
     position: relative;
     margin-left: 30px;
@@ -241,6 +246,7 @@
     margin-left: 0;
 }
 
+/*PORTFOLIO- APPLICATION 2*/
 .portfolio-2 {
     position: relative;
 }
@@ -269,6 +275,7 @@
     margin-left: 10px;
 }
 
+/*PORTFOLIO- APPLICATION 3*/
 .portfolio-3 {
     position: relative;
 }
@@ -297,6 +304,7 @@
     margin-left: 10px;
 }
 
+/*PORTFOLIO- APPLICATION 4*/
 .portfolio-4 {
     position: relative;
 }
@@ -332,19 +340,33 @@
     left: -30px;
 }
 
-/*FOOTER CONTACT ME*/
+/*PORTFOLIO- SERVICES*/
+.portfolio-services span {
+    font-weight: bold;
+}
+
+/*FOOTER*/
 footer {
     display: block;
     margin-left: 300px;
     padding-left: 5px;
 }
 
+/*CONTACT ME*/
 #contact-me-page {
     display: flex;
     flex-direction: column;
 }
 
+/*CONTACT ME- INFORMATION*/
+.contact-me-information span{
+    font-weight: bold;
+}
 
+/*CONTACT ME- CONTACT FORM*/
+/*HAVEN'T FULLY COMPLETED AS I NEED THE BACK-END DONE THROUGH JAVASCRIPT WHICH I HAVEN'T LEARNT YET*/
+
+/*MEDIA ENQUIRIES*/
 @media only screen and (max-width: 1200px) {
     .portfolio-1 img {
         width: 100%;
