@@ -62,3 +62,6 @@ A section for details about how employers can contact me.
 Using an unordered list I have my location, email and phone number present.
 ##### Contact Me Form
 Using the form for labels and inputs (text and textarea), I have created a section where an employer can write in their name, email, subject matter and message to send to me. Once I learn how the backend part works then I will update it.
+
+## Screenshot of Final Product
+![Screenshot of final webpage](/Images/WebPage%20Screenshot.png)
