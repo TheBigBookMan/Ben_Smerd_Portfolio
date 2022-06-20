@@ -64,4 +64,4 @@ Using an unordered list I have my location, email and phone number present.
 Using the form for labels and inputs (text and textarea), I have created a section where an employer can write in their name, email, subject matter and message to send to me. Once I learn how the backend part works then I will update it.
 
 ## Screenshot of Final Product
-![Screenshot of final webpage]("C:\Users\bsmer\Desktop\Portfolio\Ben_Smerd_Portfolio\Develop Contents\Images\WebPage Screenshot.png")
+![Screenshot of final webpage](/Develop%20Contents/WebPage_Screenshot.png)
